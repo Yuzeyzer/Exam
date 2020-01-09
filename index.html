@@ -26,8 +26,12 @@
                 <li class="menu-items"><a href="#footer">Contact</a></li>
             </ul>
         </nav>
+        
     </div>
 </header>
+<div class="mobile-btn flex-center wow fadeInDown">
+    <span></span>
+</div>
 <section id="hero">
     <div class="container">
         <div class="hero-content flex wow fadeInLeft">
@@ -68,7 +72,9 @@
         <div class="road-map flex fl-column jst-btw fl-wrap">
             <div class="row place-row-1 flex fl-wrap container wow fadeInLeft">
                 <div class="col-4">
-                    <div class="place-items"><h3>BRAC ATM Booth <br>
+                    <div class="place-items">
+                        <span class="map-km">2.0km</span>
+                        <h3>BRAC ATM Booth <br>
                         <span class="light">Connect with CityMap</span></h3>
                         <p>According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De
                             Finibus
@@ -87,8 +93,10 @@
                         <img src="./images/_medicine_b1ol.png" alt="">
                     </div>
                 </div>
-                <div class="col-4  wow fadeInLeft">
-                    <div class="place-items"><h3>BRAC ATM Booth <br>
+                <div class="col-4 pl  wow fadeInLeft">
+                    <div class="place-items">
+                        <span class="map-km">5.0km</span>
+                        <h3>BRAC ATM Booth <br>
                         <span class="light">Connect with CityMap</span></h3>
                         <p>According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De
                             Finibus
@@ -164,6 +172,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
     new WOW().init();
+    $(document).ready(function(){
+    $(".mobile-btn").on("click", function(){
+        $(this).toggleClass("mobile-active");
+        $(".menu").toggleClass("show-menu")
+    });
+    $(".menu-items").on("click", function(){
+        $(".menu").removeClass("show-menu");
+        $(".mobile-btn").removeClass("mobile-active")
+    })
+})
 </script>
+<script src="./js/script.js"></script>
 </body>
 </html>
