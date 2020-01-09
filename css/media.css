@@ -1,0 +1,84 @@
+@media screen and (max-width: 1199.98px) {
+    html {
+        font-size: 9px;
+    }
+    #hero .container .hero-content .img-girl-walk {
+        margin: 35% 0 0 25% ;
+        width: 50%;
+    }
+    #footer {
+        background: none;
+    }
+    #footer .container .row {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+     .col-3 {
+        width: 50%;
+    }
+    #footer .container .row .col-3 ul {
+        float: left;
+    }
+    #city-map {
+        margin-top: 25rem;
+        padding-bottom: 40rem;
+    }
+}
+
+
+@media screen and (max-width: 991.98px) {
+    html {
+        font-size: 8px;
+    }
+    .menu {
+        display: none;
+    }
+    .place-row {
+        margin-left: 0;
+    }
+    #hero .container .hero-content .hero-info {
+        width: 100%;
+    }
+    #hero .container .hero-content .img-girl-walk {
+        margin: 15% 0 0 25% ;
+        width: 50%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .road {
+        display: none;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    html {
+        font-size: 8px;
+    }
+    #Place .container .row {
+        transform: translateY(-25%);
+    }
+    #hero .container .hero-content {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    html {
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 375.98px) {
+
+}
